@@ -16,7 +16,7 @@ body {
   background: transparent;
 }
 
-body::before {
+body::before{
   content: "";
   position: fixed;
   background: #040404 url("https://drive.google.com/uc?id=1H-nyYMcs1O5KziEkzLOK3hHBsZMo8cku") top right no-repeat;
@@ -24,22 +24,32 @@ body::before {
   left: 0;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   z-index: -1;
 }
 
-@media (min-width: 1024px) {
-  body::before {
-    background-attachment: fixed;
+@media all and (max-width: 400px) {
+  body::before{
+    position: fixed;
+    background: #040404 url("https://drive.google.com/uc?id=1Bb62CLgHWaouls8x3KmneZ7HTkWnLVA5") top right no-repeat;
+    background-size: cover;
+  }
+}
+
+@media all and (max-width: 567px) and (min-width:400px){
+  body::before{
+    position: fixed;
+    background: #040404 url("https://drive.google.com/uc?id=1x3N5B0QoO13NvmyzSe-aK9YWkOSLVGUQ") top right no-repeat;
+    background-size: cover;
   }
 }
 
 a {
-  color: #18d26e;
+  color: #2962ff;
 }
 
 a:hover {
-  color: #35e888;
+  color: #2962ff;
   text-decoration: none;
 }
 
@@ -88,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header h2 span {
   color: #fff;
-  border-bottom: 2px solid #18d26e;
+  border-bottom: 2px solid #2962ff;
   padding-bottom: 6px;
 }
 
@@ -117,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  background: #18d26e;
+  background: #2962ff;
 }
 
 @media (max-width: 992px) {
@@ -175,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #2962ff;
   visibility: hidden;
   width: 0px;
 }
@@ -244,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #18d26e;
+  color: #2962ff;
   text-decoration: none;
 }
 
@@ -363,7 +373,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: #2962ff;
   margin: 4px 10px;
 }
 
@@ -383,7 +393,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: #2892da;
 }
 
 .about-me .content ul {
@@ -398,7 +408,7 @@ section .container {
 .about-me .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #18d26e;
+  color: #2962ff;
 }
 
 .about-me .content p:last-child {
@@ -436,7 +446,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #18d26e;
+  background-color: #2892da;
 }
 
 /*--------------------------------------------------------------
@@ -496,7 +506,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #18d26e;
+  color: #2892da;
   margin-bottom: 10px;
 }
 
@@ -529,8 +539,8 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: #2962ff;
+  border: 2px solid #2962ff;
 }
 
 /*--------------------------------------------------------------
@@ -547,7 +557,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #18d26e;
+  background: #5877ff;
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   display: flex;
@@ -592,8 +602,8 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: #5877ff;
+  border-color: #5877ff;
 }
 
 .services .icon-box:hover .icon {
@@ -601,56 +611,23 @@ section .container {
 }
 
 .services .icon-box:hover .icon i {
-  color: #18d26e;
+  color: #5877ff;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #5877ff;
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4 a, .services .icon-box:hover p{
   color: #fff;
 }
-
+#colorimg{
+height: 2rem;
+width:2rem;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 15px auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 16px 10px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-  margin: 0 3px 10px 3px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 4px;
-}
-
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
@@ -703,7 +680,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  color: #2962ff;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -756,7 +733,7 @@ section .container {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #18d26e;
+  color: #2962ff;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -793,7 +770,7 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #18d26e;
+  color: #2962ff;
 }
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -835,7 +812,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #18d26e !important;
+  background-color: #2962ff !important;
 }
 
 .portfolio-details .portfolio-info {
