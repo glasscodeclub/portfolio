@@ -28,22 +28,20 @@ body::before{
   z-index: -1;
 }
 
-@media all and (max-width: 400px) {
-  body::before{
-    position: fixed;
-    background: #040404 url("https://drive.google.com/uc?id=1Bb62CLgHWaouls8x3KmneZ7HTkWnLVA5") top right no-repeat;
-    background-size: cover;
-  }
-}
-
-@media all and (max-width: 567px) and (min-width:400px){
+@media all and (max-width: 410px) and (min-width:240px){
   body::before{
     position: fixed;
     background: #040404 url("https://drive.google.com/uc?id=1x3N5B0QoO13NvmyzSe-aK9YWkOSLVGUQ") top right no-repeat;
     background-size: cover;
   }
 }
-
+@media all and (max-width: 240px) {
+  body::before{
+    position: fixed;
+    background: #040404 url("https://drive.google.com/uc?id=1Bb62CLgHWaouls8x3KmneZ7HTkWnLVA5") top right no-repeat;
+    background-size: cover;
+  }
+}
 a {
   color: #2962ff;
 }
