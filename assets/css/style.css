@@ -28,20 +28,37 @@ body::before{
   z-index: -1;
 }
 
-@media all and (max-width: 410px) and (min-width:240px){
+@media all and (max-width: 610px) and (min-width:480px){
   body::before{
     position: fixed;
-    background: #040404 url("https://drive.google.com/uc?id=1x3N5B0QoO13NvmyzSe-aK9YWkOSLVGUQ") top right no-repeat;
+    background: #040404 url("https://drive.google.com/uc?id=1dwWkdhAlNp7BA8FgcKC-KD6hXwyGhCWm") bottom center no-repeat;
     background-size: cover;
   }
+  .homecontent>span::before{
+    justify-content: center;
+    text-align: center;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+  }
 }
-@media all and (max-width: 240px) {
-  body::before{
+@media all and (max-width: 480px) and (min-width:400px)
+{
+  body::before
+  {
     position: fixed;
-    background: #040404 url("https://drive.google.com/uc?id=1Bb62CLgHWaouls8x3KmneZ7HTkWnLVA5") top right no-repeat;
+    background: #040404 url("https://drive.google.com/uc?id=1o6keQ16jTfLzNhZJylpVZM5XYDg7VrrE") bottom right no-repeat;
     background-size: cover;
   }
-}
+}  
+  @media all and (max-width: 400px) 
+  {
+    body::before{
+      position: fixed;
+      background: #040404 url("https://drive.google.com/uc?id=1Q5pMQBl59n64UX2i8hkjKSIQKup0sTbJ") center right no-repeat;
+      background-size: cover;
+    }
+ }
 a {
   color: #2962ff;
 }
@@ -156,15 +173,10 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu ul{
   display: flex;
   margin: 10px -30px;
-  /* margin: 10px 10px; */
   padding: 5px 25px;
   list-style: none;
 }
-/* .homeHeader{
-  position: fixed;
-  top: 0;
-  left: 270px;
-} */
+
 .nav-menu li + li {
   margin-left: 50px;
 }
