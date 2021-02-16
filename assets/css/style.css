@@ -28,7 +28,7 @@ body::before{
   z-index: -1;
 }
 
-@media all and (max-width: 610px) and (min-width:480px){
+@media all and (max-width: 493px) and (min-width:390px){
   body::before{
     position: fixed;
     background: #040404 url("https://drive.google.com/uc?id=1dwWkdhAlNp7BA8FgcKC-KD6hXwyGhCWm") bottom center no-repeat;
@@ -42,16 +42,7 @@ body::before{
     padding: 0;
   }
 }
-@media all and (max-width: 480px) and (min-width:400px)
-{
-  body::before
-  {
-    position: fixed;
-    background: #040404 url("https://drive.google.com/uc?id=1o6keQ16jTfLzNhZJylpVZM5XYDg7VrrE") bottom right no-repeat;
-    background-size: cover;
-  }
-}  
-  @media all and (max-width: 400px) 
+  @media all and (max-width: 390px) 
   {
     body::before{
       position: fixed;
