@@ -19,7 +19,7 @@ body {
 body::before{
   content: "";
   position: fixed;
-  background: #040404 url("https://drive.google.com/uc?id=1H-nyYMcs1O5KziEkzLOK3hHBsZMo8cku") top right no-repeat;
+  background: #040404 url("/assets/img/Home\ Page.png") top right no-repeat;/*Check Image location(who's drive)*/
   background-size: cover;
   left: 0;
   right: 0;
@@ -31,7 +31,7 @@ body::before{
 @media all and (max-width: 493px) and (min-width:390px){
   body::before{
     position: fixed;
-    background: #040404 url("https://drive.google.com/uc?id=1dwWkdhAlNp7BA8FgcKC-KD6hXwyGhCWm") bottom center no-repeat;
+    background: #040404 url("/assets/img/Home\ Page\(new4\).jpg") bottom center no-repeat;
     background-size: cover;
   }
   .homecontent>span::before{
@@ -46,7 +46,7 @@ body::before{
   {
     body::before{
       position: fixed;
-      background: #040404 url("https://drive.google.com/uc?id=1Q5pMQBl59n64UX2i8hkjKSIQKup0sTbJ") center right no-repeat;
+      background: #040404 url("/assets/img/Home\ Page\(new5\).jpg") center right no-repeat;
       background-size: cover;
     }
  }
