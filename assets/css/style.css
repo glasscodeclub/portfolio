@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
@@ -635,6 +635,7 @@ width:2rem;
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 35px;
 }
 
 .portfolio .portfolio-wrap::before {
